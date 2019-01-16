@@ -2470,7 +2470,7 @@ declare module Immutable {
 
     // Reading values
 
-    has(key: string): key is keyof TProps & string;
+    has(key: string | number | symbol): key is keyof TProps & string;
 
     /**
      * Returns the value associated with the provided key, which may be the
